@@ -14,9 +14,9 @@ numfiles=$(gettoknow)
 
 while [[ $response -ne $numfiles ]]
 do
-	if  ! [[ $response =~ ^[+-]?[0-9]+$ ]]
+	if  ! [[ $response =~ ^[\-0-9]+$ ]] && (( A < 0));
 	then
-		echo "Integers only"
+		echo " Positive valid Integers only"
 	elif  [[ $response -lt $numfiles ]]
 	then
 		echo "Low"

@@ -5,7 +5,7 @@ read response
 
 function gettoknow
 {
-	local num=$(ls -1 | wc -l)
+	local num=$(ls -a | wc -l)
 	echo $num
 
 }
